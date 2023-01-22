@@ -6,7 +6,7 @@ if ld == 0:
     print("Last digit of {:d} is {:d} and is {:d}".format(number, ld, 0))
 if ld > 5:
     print("Las digit of {:d} is {:d} and is gradter than {:d}"
-          .format(number, ld, 5))
+          .format(number, ld, 6))
 if ld < 6 and ld != 0:
     print("Las digit of {:d} is {:d} and is less than {:d} and not {:d}"
           .format(number, ld, 5, 0))

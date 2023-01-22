@@ -8,5 +8,5 @@ if lnumber > 5:
 elif lnumber == 0:
     print('Last digit of {:d} is {:d} and is {:d}'.format(number, lnumber, 0))
 elif lnumber < 6 and lnumber != 0:
-    print('Last digit of {:d} is {:d} and is less than {:d} and not {:d}'
-          .format(number, lnumber, 5, 0))
+    print('Last digit of {:d} is {:d} and is less than {:d} and not 0'
+          .format(number, lnumber, 6, 0))

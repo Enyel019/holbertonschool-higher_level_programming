@@ -9,4 +9,4 @@ if ld > 5:
           .format(number, ld, 5))
 if ld < 6 and ld != 0:
     print("Las digit of {:d} is {:d} and is less than {:d} and not {:d}"
-          .format(number, ld, 6, 0))
+          .format(number, ld, 5, 0))

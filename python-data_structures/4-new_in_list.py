@@ -6,4 +6,4 @@ def new_in_list(my_list, idx, element):
     for count in range(len(mylist)):
         if (count == idx):
             mylist[idx] = element
-            return mylist
+    return mylist

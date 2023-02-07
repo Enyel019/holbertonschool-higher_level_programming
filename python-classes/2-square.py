@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-    """Write a class Square that defines a square by.
-    Raises:
-        TypeError: ("size must be an integer")
-        ValueError: ("size must be >= 0")
-    """
+"""Write a class Square that defines a square by
+"""
 
 
 class Square:

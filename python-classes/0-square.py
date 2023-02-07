@@ -2,6 +2,8 @@
 
 """Write an empty class Square"""
 class Square:
+
+
     """
     It creates a class called Square.
     """

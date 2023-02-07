@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-
-"""Write an empty class Square"""
-
+"""Write an empty class
+    """
 class Square:
- """
- It creates a class called Square.
- """
- pass
+    pass

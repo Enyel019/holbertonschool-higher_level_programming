@@ -5,6 +5,7 @@
 """
 class Square:
 
+
     """Square is a class that has no methods or attributes.
     """
     pass

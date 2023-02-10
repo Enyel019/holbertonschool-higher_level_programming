@@ -65,6 +65,11 @@ class Square:
             print()
             return
         else:
-            while(c):
-                print("{}".format(p) * self.__size)
-                c -= 1
+            for INT in range(0, self.__position[1]):
+                print()
+            for INT in range(0, self.__size):
+                for A in range(0, self.position[0]):
+                    print(" ", end="")
+                for B in range(0, self.__size):
+                    print("#", end="")
+                print()

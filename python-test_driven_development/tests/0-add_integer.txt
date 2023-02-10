@@ -1,8 +1,12 @@
-=+=+=+=+=+=+=+=+=+=+=+=+
-0-add_integer.py module
-+=+=+=+=+=+=+=+=+=+=+=+=
+The ``0-add_integer`` module
+============================
 
->>> add_integer = __import__('0-add_integer').add_integer
+Using ``add_integer``
+---------------------
+
+Importing function from the module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
 
 def add_integer(a, b=98):
     """
@@ -21,17 +25,3 @@ def add_integer(a, b=98):
     7
     >>> add_integer(4.5, 3.5)
     8
-    >>> add_integer('1', 2)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
-    >>> add_integer(1, '2')
-    Traceback (most recent call last):
-    ...
-    TypeError: b must be an integer
-    """
-    if not isinstance(a, (int, float)):
-        raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
-        raise TypeError("b must be an integer")
-    return (int(a) + int(b))

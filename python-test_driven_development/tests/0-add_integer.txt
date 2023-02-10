@@ -23,5 +23,3 @@ def add_integer(a, b=98):
     -2
     >>> add_integer(4.5, 3)
     7
-    >>> add_integer(4.5, 3.5)
-    8

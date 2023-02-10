@@ -1,31 +1,144 @@
-def add_integer(a, b=98):
-    """
-    Add_integer: adds two integers and returns the sum
+=+=+=+=+=+=+=+=+=+=+=+=+
+0-add_integer.py module
++=+=+=+=+=+=+=+=+=+=+=+=
+>>> add_integer = __import__('0-add_integer').add_integer
 
-    :param a: first integer
-    :param b: 98, defaults to 98 (optional)
+= = = =
+case1
+= = = =
+>>> print(add_integer(1, 2))
+3
 
-    >>> add_integer(1, 2)
-    3
-    >>> add_integer(0)
-    98
-    >>> add_integer(-1, -1)
-    -2
-    >>> add_integer(4.5, 3)
-    7
-    >>> add_integer(4.5, 3.5)
-    8
-    >>> add_integer('1', 2)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
-    >>> add_integer(1, '2')
-    Traceback (most recent call last):
-    ...
-    TypeError: b must be an integer
-    """
-    if not isinstance(a, (int, float)):
-        raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
-        raise TypeError("b must be an integer")
-    return (int(a) + int(b))
+= = = =
+case 2
+= = = =
+>>> try:
+...	print(add_integer(1, 's'))
+... except Exception as E:
+...     print(E)
+b must be an integer
+
+= = = =
+case 3
+= = = =
+>>> try:
+...	print(add_integer('w', 2))
+... except Exception as E:
+...     print(E)
+a must be an integer
+
+= = = =
+case 4
+= = = =
+>>> try:
+...	print(add_integer(None, 2))
+... except Exception as E:
+...     print(E)
+a must be an integer
+
+= = = =
+case 5
+= = = =
+>>> try:
+...	print(add_integer(2, None))
+... except TypeError as E:
+...     print(E)
+b must be an integer
+
+= = = =
+case 6
+= = = =
+>>> try:
+...	print(add_integer(2))
+... except TypeError as E:
+...     print(E)
+100
+
+= = = =
+case 7
+= = = =
+>>> try:
+...	print(add_integer(3.4, 2))
+... except TypeError as E:
+...     print(E)
+5
+
+= = = =
+case 8
+= = = =
+>>> try:
+...	print(add_integer(3.4, 7.4))
+... except TypeError as E:
+...     print(E)
+10
+
+
+= = = =
+case 9
+= = = =
+>>> try:
+...	print(add_integer(3.4, "huhu"))
+... except TypeError as E:
+...     print(E)
+b must be an integer
+
+= = = =
+case 9
+= = = =
+>>> print(add_integer(None, None)) # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+= = = =
+case 9
+= = = =
+>>> print(add_integer(2, None)) # doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+= = = =
+case 10
+= = = =
+>>> print(add_integer(0.111111111111111111111, 2))
+2
+
+= = = =
+case 11
+= = = =
+>>> print(add_integer(1, 2.11))
+3
+
+= = = =
+case 12
+= = = =
+>>> try:
+...    print(add_integer(str("nan"), 2))
+... except Exception as E:
+...    print(E)
+a must be an integer
+
+= = = =
+case 13
+= = = =
+>>> try:
+...    print(add_integer(None))
+... except Exception as E:
+...    print(E)
+a must be an integer
+
+= = = =
+case 14
+= = = =
+>>> try:
+...    print(add_integer(None, None))
+... except Exception as E:
+...    print(E)
+a must be an integer
+
+= = = =
+case 15
+= = = =
+>>> print(add_integer(True, True))
+2

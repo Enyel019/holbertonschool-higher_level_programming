@@ -1,0 +1,31 @@
+def add_integer(a, b=98):
+    """
+    Add_integer() adds two integers and returns the sum
+
+    :param a: first integer
+    :param b: 98, defaults to 98 (optional)
+
+    >>> add_integer(1, 2)
+    3
+    >>> add_integer(0)
+    98
+    >>> add_integer(-1, -1)
+    -2
+    >>> add_integer(4.5, 3)
+    7
+    >>> add_integer(4.5, 3.5)
+    8
+    >>> add_integer('1', 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+    >>> add_integer(1, '2')
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+    """
+    if not isinstance(a, (int, float)):
+        raise TypeError("a must be an integer")
+    if not isinstance(b, (int, float)):
+        raise TypeError("b must be an integer")
+    return (int(a) + int(b))

@@ -63,6 +63,7 @@ class Square:
         c = self.__size
         if self.__size == 0:
             print()
+            return
         else:
             while(c):
                 print("{}".format(p) * self.__size)

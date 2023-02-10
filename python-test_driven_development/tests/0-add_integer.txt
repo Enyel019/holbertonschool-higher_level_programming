@@ -1,16 +1,6 @@
-The ``0-add_integer`` module
-============================
-
-Using ``add_integer``
----------------------
-
-Importing function from the module:
-    >>> add_integer = __import__('0-add_integer').add_integer
-
-
 def add_integer(a, b=98):
     """
-    Add_integer() adds two integers and returns the sum
+    Add_integer: adds two integers and returns the sum
 
     :param a: first integer
     :param b: 98, defaults to 98 (optional)
@@ -23,16 +13,19 @@ def add_integer(a, b=98):
     -2
     >>> add_integer(4.5, 3)
     7
-""" Doc """
-
-def add_integer(a, b=98):
-    """ Doc """
-    if a != a:
-        a = 89
-    if b != b:
-        b = 89
-    if a is None or (type(a) is not int and type(a) is not float):
+    >>> add_integer(4.5, 3.5)
+    8
+    >>> add_integer('1', 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+    >>> add_integer(1, '2')
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+    """
+    if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
-    if type(b) is not int and type(b) is not float:
+    if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    return int(a) + int(b)
+    return (int(a) + int(b))

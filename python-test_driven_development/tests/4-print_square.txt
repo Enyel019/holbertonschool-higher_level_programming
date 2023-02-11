@@ -1,0 +1,71 @@
+=+=+=+=+=+=+=+=+=+=+=+=+
+4-print_square.py
++=+=+=+=+=+=+=+=+=+=+=+=
+>>> print_square = __import__('4-print_square').print_square
+
+
+=+=+=+=+=+=+=+=+
+=+=+  =+=+  =+=+
+=+=+  =+=+  =+=+
+=+=+=+=+=+=+=+=+
+=+=+=+=  +=+=+=+
+=+=+=+=  +=+=+=+
+=+=+=+=+=+=+=+=+
+
+= = = =
+case1
+= = = =
+>>> print_square(0)
+
+= = = =
+case1
+= = = =
+>>> print_square(3)
+###
+###
+###
+
+= = = =
+case3
+= = = =
+>>> try:
+...    print_square(-0.2)
+... except Exception as E:
+...    print(E)
+size must be an integer
+
+
+= = = =
+case4
+= = = =
+>>> try:
+...    print_square(-0.2)
+... except Exception as E:
+...    print(E)
+size must be an integer
+
+= = = =
+case4
+= = = =
+>>> try:
+...    print_square(-2)
+... except Exception as E:
+...    print(E)
+size must be >= 0
+
+= = = =
+case5
+= = = =
+>>> try:
+...    print_square('s')
+... except Exception as E:
+...    print(E)
+size must be an integer
+
+= = = =
+case5
+= = = =
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'

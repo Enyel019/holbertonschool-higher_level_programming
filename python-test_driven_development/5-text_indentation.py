@@ -6,7 +6,8 @@
 
 def text_indentation(text):
     """
-    This function takes a string as input and prints it with two new lines after each of these
+    This function takes a string as input and prints it with
+    two new lines after each of these
     characters: ., ? and :
 
     :param text: a string

@@ -12,11 +12,6 @@ class Rectangle:
         self.height = height
         self.width = width
 
-    msg_1 = "width must be an integer"
-    msg_2 = "width must be >= 0"
-    msg_3 = "height must be an integer"
-    msg_4 = "height must be >= 0"
-
     @property
     def height(self):
         return self.__height

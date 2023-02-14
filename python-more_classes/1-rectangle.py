@@ -9,6 +9,8 @@ class Rectangle:
     """
     msg_1 = "width must be an integer"
     msg_2 = "width must be >= 0"
+    msg_3 = "height must be an integer"
+    msg_4 = "height must be >= 0"
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -21,9 +23,9 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError(msg_1)
+            raise TypeError(msg_3)
         elif value < 0:
-            raise ValueError(msg_2)
+            raise ValueError(msg_4)
         else:
             self.__height = value
 

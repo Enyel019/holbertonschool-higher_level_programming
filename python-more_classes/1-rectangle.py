@@ -7,14 +7,15 @@ class Rectangle:
     """
     A rectangle has a width, a height, an area, and a perimeter.
     """
-    msg_1 = "width must be an integer"
-    msg_2 = "width must be >= 0"
-    msg_3 = "height must be an integer"
-    msg_4 = "height must be >= 0"
 
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
+
+    msg_1 = "width must be an integer"
+    msg_2 = "width must be >= 0"
+    msg_3 = "height must be an integer"
+    msg_4 = "height must be >= 0"
 
     @property
     def height(self):
@@ -23,9 +24,9 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError(msg_3)
+            raise TypeError("height must be an integer")
         elif value < 0:
-            raise ValueError(msg_4)
+            raise ValueError("height must be >= 0")
         else:
             self.__height = value
 
@@ -36,8 +37,8 @@ class Rectangle:
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
-            raise TypeError(msg_1)
+            raise TypeError("width must be an integer")
         elif value < 0:
-            raise ValueError(msg_2)
+            raise ValueError("width must be >= 0")
         else:
             self.__width = value

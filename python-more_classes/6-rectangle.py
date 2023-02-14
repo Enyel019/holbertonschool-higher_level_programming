@@ -5,6 +5,7 @@
 
 class Rectangle:
     number_of_instances = 0
+
     """
     A rectangle has a width, a height, an area, and a perimeter.
     """

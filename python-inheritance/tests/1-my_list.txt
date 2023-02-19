@@ -37,6 +37,7 @@ Case 3
 >>> print(my_list)
 [-1, -2, 2, 3]
 
+
 ======
 Case 4
 ======
@@ -55,4 +56,3 @@ Case 6
 ======
 >>> type(my_list)
 <class '1-my_list.MyList'>
-

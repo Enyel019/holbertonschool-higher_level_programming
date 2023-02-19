@@ -36,3 +36,23 @@ Case 3
 ======
 >>> print(my_list)
 [-1, -2, 2, 3]
+
+
+======
+Case 4
+======
+>>> isinstance(my_list, list)
+True
+
+
+======
+Case 5
+======
+>>> issubclass(type(my_list), list)
+True
+
+======
+Case 6
+======
+>>> type(my_list)
+<class '1-my_list.MyList'>

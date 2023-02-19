@@ -8,4 +8,3 @@ class BaseGeometry:
     This class is a base class for all geometries
 
     """
-

@@ -36,8 +36,6 @@ Case 3
 ======
 >>> print(my_list)
 [-1, -2, 2, 3]
->>> print(my_list())
-
 
 ======
 Case 4

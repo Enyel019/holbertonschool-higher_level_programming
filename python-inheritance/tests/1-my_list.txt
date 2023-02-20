@@ -1,6 +1,8 @@
-1-my_list.py module
+=======================
+1-My_list test cases
+=======================
 
->>> MyList = __import__('1-my_list').MyList
+>>>MyList = __import__('1-my_list').MyList
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()

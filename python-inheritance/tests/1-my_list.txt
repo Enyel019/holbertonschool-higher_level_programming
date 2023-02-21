@@ -36,7 +36,7 @@ Case 3
 ======
 >>> print(my_list)
 [-1, -2, 2, 3]
-
+>>> my_list.print_sorted()
 
 ======
 Case 4

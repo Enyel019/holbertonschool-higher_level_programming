@@ -68,4 +68,3 @@ Case7
     Traceback (most recent call last):
     	      ...
     TypeError: age must be an integer
-

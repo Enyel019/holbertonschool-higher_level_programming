@@ -51,3 +51,12 @@ Case5
               ...
     TypeError: age must be an integer
 
+=====
+Case6
+=====
+  >>> bg = BaseGeometry()
+    >>> bg.integer_validator("age", None)
+    Traceback (most recent call last):
+              ...
+    TypeError: age must be an integer
+

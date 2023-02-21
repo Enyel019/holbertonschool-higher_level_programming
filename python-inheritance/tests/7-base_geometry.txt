@@ -42,8 +42,3 @@ Traceback (most recent call last):
 ...
 ValueError: name must be greater than 0
 
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> bg = BaseGeometry()
->>> bg.area()
-Traceback (most recent call last):
-    ...

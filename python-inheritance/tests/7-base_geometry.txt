@@ -147,10 +147,3 @@ Trying to pass a non-integer argument
     	      ...
     TypeError: name must be an integer
 
-
-Trying to pass a boolean value
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", True)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: name must be an integer

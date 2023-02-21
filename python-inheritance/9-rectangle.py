@@ -6,7 +6,6 @@
 class BaseGeometry():
     """
     It's a class that defines a geometry.
-
     """
     def area(self):
         raise Exception("area() is not implemen")

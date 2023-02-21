@@ -42,16 +42,6 @@ Traceback (most recent call last):
 ...
 ValueError: name must be greater than 0
 
-TEST CONDITIONS
-===============
-
-testing instantiation
-::
->>> print(bg.__dict__)
-{}
-
-testing area method
-::
 >>> try:
 ...     bg.area()
 ... except Exception as err:

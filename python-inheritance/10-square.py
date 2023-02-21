@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Importing the class Rectangle from the file 9-rectangle.py"""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 

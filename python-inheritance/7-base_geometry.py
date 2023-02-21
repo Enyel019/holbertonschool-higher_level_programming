@@ -9,6 +9,9 @@ class BaseGeometry():
 
     """
     def area(self):
+        """
+        It calculates the area of a rectangle.
+        """
         raise Exception("area() is not implemen")
 
     def integer_validator(self, name, value):

@@ -108,15 +108,6 @@ Passing two arguments to area method
     TypeError: area() takes 1 positional argument but 3 were given
 
 
-    Passing tuple to method
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("age", ("4")
-    Traceback (most recent call last):
-    	      ...
-    TypeError: age must be an integer
-
-
-
 Passing tuple to method
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("age", (4,))

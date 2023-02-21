@@ -73,7 +73,7 @@ Case7
 Case8
 =====
 >>> bg = BaseGeometry()
->>> bg.integer_validator("age", (4,))
+>>> bg.area(5, 5)
     Traceback (most recent call last):
     	      ...
-    TypeError: age must be an integer
+    TypeError: area() takes 1 positional argument but 3 were given

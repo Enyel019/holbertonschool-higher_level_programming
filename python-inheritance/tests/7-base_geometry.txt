@@ -69,6 +69,3 @@ Case7
     	      ...
     TypeError: age must be an integer
 
-=====
-Case8
-=====

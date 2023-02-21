@@ -45,8 +45,8 @@ ValueError: name must be greater than 0
 =====
 Case5
 =====
- >>> bg = BaseGeometry()
-    >>> bg.integer_validator("age", {3, 4})
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", {3, 4})
     Traceback (most recent call last):
               ...
     TypeError: age must be an integer
@@ -54,8 +54,8 @@ Case5
 =====
 Case6
 =====
-  >>> bg = BaseGeometry()
-    >>> bg.integer_validator("age", None)
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", None)
     Traceback (most recent call last):
               ...
     TypeError: age must be an integer
@@ -64,7 +64,7 @@ Case6
 Case7
 =====
 >>> bg = BaseGeometry()
-    >>> bg.integer_validator("age", [3])
+>>> bg.integer_validator("age", [3])
     Traceback (most recent call last):
     	      ...
     TypeError: age must be an integer
@@ -73,7 +73,7 @@ Case7
 Case8
 =====
 >>> bg = BaseGeometry()
-    >>> bg.integer_validator("age", [4])
+>>> bg.integer_validator("age", (4,))
     Traceback (most recent call last):
     	      ...
     TypeError: age must be an integer

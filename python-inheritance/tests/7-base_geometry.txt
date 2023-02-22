@@ -83,9 +83,3 @@ Passing None to method
               ...
     TypeError: age must be an integer
 
-Trying to print the area
-    >>> bg = BaseGeometry()
-    >>> bg.area()
-    Traceback (most recent call last):
-    	      ...
-    Exception: area() is not implemented

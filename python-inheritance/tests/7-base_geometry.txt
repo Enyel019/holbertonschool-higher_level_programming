@@ -51,3 +51,13 @@ Passing one argument to area method
     Traceback (most recent call last):
     	      ...
     TypeError: area() takes 1 positional argument but 2 were given
+
+=====
+Case6
+=====
+Passing two arguments to area method
+    >>> bg = BaseGeometry()
+    >>> bg.area(5, 5)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: area() takes 1 positional argument but 3 were given

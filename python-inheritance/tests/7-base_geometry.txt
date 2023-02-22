@@ -58,8 +58,7 @@ Passing tuple to method
     >>> bg.integer_validator("age", 0)
     Traceback (most recent call last):
     	      ...
-    TypeError: age must be an integer
-
+   ValueError: age must be greater than 0
 Passing tuple to method
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("age", (4,))

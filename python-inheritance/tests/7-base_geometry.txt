@@ -41,3 +41,13 @@ Case4
 Traceback (most recent call last):
 ...
 ValueError: name must be greater than 0
+
+=====
+Case5
+=====
+Passing one argument to area method
+    >>> bg = BaseGeometry()
+    >>> bg.area(5)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: area() takes 1 positional argument but 2 were given

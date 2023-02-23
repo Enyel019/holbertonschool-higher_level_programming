@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Write a function that returns the JSON representation of an object (string):
 """
-
+import json
 
 def to_json_string(my_obj):
     """
@@ -10,4 +10,4 @@ def to_json_string(my_obj):
     :param my_obj: the object to be serialized
     """
 
-    return to_json_string(my_obj)
+    return json.dumps(my_obj)

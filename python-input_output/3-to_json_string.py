@@ -10,4 +10,4 @@ def to_json_string(my_obj):
     :param my_obj: the object to be serialized
     """
 
-    return json.dumps(my_obj)
+    return to_json_string(my_obj)

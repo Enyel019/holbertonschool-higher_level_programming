@@ -6,7 +6,8 @@
 
 def write_file(filename="", text=""):
     """
-    Write a string to a text file (UTF8) and return the number of characters written.
+    Write a string to a text file (UTF8) and return the number
+    of characters written.
 
     :param filename: the name of the file to write to
     :param text: the text to write to the file

@@ -7,7 +7,8 @@
 
 def class_to_json(obj):
     """
-    It takes an object and returns a dictionary containing all of the object's attributes
+    It takes an object and returns a dictionary containing all
+    of the object's attributes
 
     :param obj: The object to be serialized
     """

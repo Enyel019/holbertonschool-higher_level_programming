@@ -17,11 +17,11 @@ save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
 try:
     list = load_from_json_file('add_item.json')
 # If the file does not exist, it will create it.
-except FileNotFoundError:
+except:
     list = []
 
 # Adding the arguments to the list.
-list.extend(sys.argv[1:])
+list.append(sys.argv[1:])
 
 # Saving the list into the file add_item.json.
 save_to_json_file(list, 'add_item.json')

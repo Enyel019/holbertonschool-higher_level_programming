@@ -7,6 +7,10 @@
 import sys
 load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+"""
+ Importing the functions load_from_json_file and save_to_json_file from the files
+ 8-load_from_json_file.py and 7-save_to_json_file.py.
+"""
 
 # Trying to load the file add_item.json and if it does not exist,
 # it will create it.

@@ -71,6 +71,9 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        """
+        It prints the value of the variable self.
+        """
         for h in range(self.y):
             print()
         for i in range(self.height):

@@ -69,4 +69,3 @@ class Rectangle(Base):
         It calculates the area of a rectangle.
         """
         return self.__width * self.__height
-

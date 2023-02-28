@@ -82,6 +82,9 @@ class Rectangle(Base):
             print("#" * self.width)
 
     def __str__(self):
+        """
+        It returns a string representation of the object.
+        """
         st1 = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
         st2 = "- {}/{}".format(self.width, self.height)
         return st1 + st2

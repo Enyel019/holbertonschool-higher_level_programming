@@ -88,3 +88,7 @@ class Rectangle(Base):
         st1 = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
         st2 = "- {}/{}".format(self.width, self.height)
         return st1 + st2
+
+    def update(self, *args):
+        for arg in args:
+            print(arg)

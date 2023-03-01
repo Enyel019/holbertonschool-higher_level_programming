@@ -100,3 +100,11 @@ class Rectangle(Base):
         else:
             for k, v in kwargs.items():
                 setattr(self, k, v)
+
+    def to_dictionary(self):
+        """
+        Returns a dictionary representation of a Square
+        """
+
+        return{"id": self.id, "width": self.width, "heigth": self.height,
+               "x": self.x, "y": self.y}

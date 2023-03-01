@@ -90,5 +90,8 @@ class Rectangle(Base):
         return st1 + st2
 
     def update(self, *args):
+        """
+        It updates the attributes of the class.
+        """
         for arg in args:
             print(arg)

@@ -93,7 +93,7 @@ class Rectangle(Base):
         """
         It updates the attributes of the class.
         """
-        cl = ['id', 'width', 'heigth', 'x', 'y']
+        cl = ['id', 'width', 'height', 'x', 'y']
         if args is not None and len(args) != 0:
             for b in range(len(args)):
                 setattr(self, cl[b], args[b])

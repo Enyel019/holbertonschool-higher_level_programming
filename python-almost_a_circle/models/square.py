@@ -16,4 +16,3 @@ class Square(Rectangle):
         st1 = "[Square] ({}) {}/{}".format(self.id, self.x, self.y)
         st2 = " - {}".format(self.size)
         return st1 + st2
-

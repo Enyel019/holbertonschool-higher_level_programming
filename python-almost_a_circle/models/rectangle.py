@@ -89,9 +89,14 @@ class Rectangle(Base):
         st2 = "- {}/{}".format(self.width, self.height)
         return st1 + st2
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         It updates the attributes of the class.
         """
-        for arg in args:
-            print(arg)
+        cl = ['id', 'width', 'heigth', 'x', 'y']
+        if args is not None and len(args) != 0:
+            for b in range(len(args)):
+                setattr(self, cl[b], args[b])
+        else:
+            for k, v in kwargs.items():
+                setattr(self, k, v)

@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""Write the first class Base:
+"""
+Base class
 """
 import json
 import os
 
 
-class Base:
-    """
-    It's a base class for all other classes.
-    """
+class Base():
+    """Base
+    class
+    manager"""
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """constructor"""
         if id is not None:
             self.id = id
         else:
@@ -37,6 +39,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """gets object from string"""
         if json_string is None or json_string == "":
             return []
         return json.loads(json_string)
@@ -55,6 +58,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """loads stringsinto objects"""
         if not os.path.exists(cls.__name__ + ".json"):
             return []
         if os.path.exists(cls.__name__ + ".json") is True:
@@ -62,7 +66,7 @@ class Base:
                 txt = f.read()
                 if not txt or txt is None or txt == "[]":
                     return []
-                l = []
-                [l.append(cls.create(**count)) for count
+                list = []
+                [list.append(cls.create(**count)) for count
                  in cls.from_json_string(txt)]
-                return l
+                return list

@@ -2,6 +2,7 @@
 """Write the first class Base:
 """
 import json
+import os
 
 
 class Base:
@@ -19,6 +20,17 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """gets string"""
         if list_dictionaries is None or list_dictionaries is []:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """write objects to file"""
+        fn = cls.__name__ + ".json"
+        nl = []
+        if list_objs is not None:
+            list_objs = [nl.append(i.to_dictionary()) for i in list_objs]
+        with open(fn, "w", encoding="utf-8") as fl:
+            fl.write(cls.to_json_string(nl))

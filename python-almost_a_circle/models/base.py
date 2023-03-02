@@ -52,7 +52,7 @@ class Base():
         if cls is Square:
             dummy = cls(1)
         elif cls is Rectangle:
-            dummy = cls(1, 1)
+            dummy = cls(2, 7)
         dummy.update(**dictionary)
         return dummy
 

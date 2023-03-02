@@ -52,3 +52,17 @@ class Base:
             dummy = cls(1, 1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        if not os.path.exists(cls.__name__ + ".json"):
+            return []
+        if os.path.exists(cls.__name__ + ".json") is True:
+            with open(cls.__name__ + ".json", 'r', encoding="utf-8") as f:
+                txt = f.read()
+                if not txt or txt is None or txt == "[]":
+                    return []
+                l = []
+                [l.append(cls.create(**count)) for count
+                 in cls.from_json_string(txt)]
+                return l

@@ -106,5 +106,5 @@ class Rectangle(Base):
         Returns a dictionary representation of a Square
         """
 
-        return{"id": self.id, "width": self.width, "heigth": self.height,
-               "x": self.x, "y": self.y}
+        return{"x": self.x, "y": self.y, "id": self.id, "heigth": self.height,
+               "width": self.width}

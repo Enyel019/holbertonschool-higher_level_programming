@@ -34,3 +34,9 @@ class Base:
             list_objs = [nl.append(i.to_dictionary()) for i in list_objs]
         with open(fn, "w", encoding="utf-8") as fl:
             fl.write(cls.to_json_string(nl))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)

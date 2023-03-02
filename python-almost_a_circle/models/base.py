@@ -58,15 +58,19 @@ class Base():
 
     @classmethod
     def load_from_file(cls):
-        """loads stringsinto objects"""
-        if not os.path.exists(cls.__name__ + ".json"):
+        """Return a list of instances"""
+        filename = "{}.json".format(cls.__name__)
+
+        if os.path.exists(filename) is False:
             return []
-        if os.path.exists(cls.__name__ + ".json") is True:
-            with open(cls.__name__ + ".json", 'r', encoding="utf-8") as f:
-                txt = f.read()
-                if not txt or txt is None or txt == "[]":
-                    return []
-                list = []
-                [list.append(cls.create(**count)) for count
-                 in cls.from_json_string(txt)]
-                return list
+
+        with open(filename, 'r') as file:
+            list_str = file.read()
+
+        list_cls = cls.from_json_string(list_str)
+        list_inst = []
+
+        for i in range(len(list_cls)):
+            list_inst.append(cls.create(**list_cls[i]))
+
+        return list_inst

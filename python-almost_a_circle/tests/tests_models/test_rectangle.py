@@ -25,3 +25,7 @@ class RectangleTest(unittest.TestCase):
             os.remove("Rectangle.json")
         if os.path.exists("Square.json"):
             os.remove("Square.json")
+
+
+if __name__ == '__main__':
+    unittest.main()

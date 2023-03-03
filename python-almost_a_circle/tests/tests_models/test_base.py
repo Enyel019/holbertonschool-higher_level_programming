@@ -25,3 +25,7 @@ class BaseTest(unittest.TestCase):
     def test_any_docstring(self):
         """Checks for any docstring"""
         self.assertTrue(len(Base.__doc__) >= 1)
+
+
+if __name__ == '__main__':
+    unittest.main()

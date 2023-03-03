@@ -26,6 +26,12 @@ class BaseTest(unittest.TestCase):
         """Checks for any docstring"""
         self.assertTrue(len(Base.__doc__) >= 1)
 
+    def test_custom_id(self):
+        '''Test custom str id'''
+        i = "Behemoth"
+        b = Base(i)
+        self.assertEqual(b.id, i)
+
 
 if __name__ == '__main__':
     unittest.main()

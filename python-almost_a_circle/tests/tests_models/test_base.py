@@ -21,3 +21,7 @@ class BaseTest(unittest.TestCase):
         self.assertEqual(b2.id, 2)
         self.assertEqual(b3.id, 3)
         self.assertEqual(b4.id, 4)
+
+    def test_any_docstring(self):
+        """Checks for any docstring"""
+        self.assertTrue(len(Base.__doc__) >= 1)

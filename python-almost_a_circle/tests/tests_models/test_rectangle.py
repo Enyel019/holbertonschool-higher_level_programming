@@ -18,3 +18,7 @@ class RectangleTest(unittest.TestCase):
         """checks for any docstring"""
         self.assertTrue(len(Rectangle.__doc__) >= 1)
 
+
+if __name__ == '__main__':
+    unittest.main()
+

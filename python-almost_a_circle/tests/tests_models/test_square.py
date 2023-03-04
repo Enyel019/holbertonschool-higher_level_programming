@@ -19,5 +19,8 @@ class SquareTest(unittest.TestCase):
 
     def test_docstring(self):
         """checks for docstring"""
-        self.assertTrue(len(Square.__doc__) >= 1)
+        self.assertTrue(len(Square.__doc__)) >= 1
 
+
+if __name__ == '__main__':
+    unittest.main()

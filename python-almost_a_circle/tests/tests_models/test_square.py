@@ -21,15 +21,3 @@ class SquareTest(unittest.TestCase):
         """checks for docstring"""
         self.assertTrue(len(Square.__doc__) >= 1)
 
-    def tearDown(self):
-        """ deletes once proved"""
-        if os.path.exists("Base.json"):
-            os.remove("Base.json")
-        if os.path.exists("Rectangle.json"):
-            os.remove("Rectangle.json")
-        if os.path.exists("Square.json"):
-            os.remove("Square.json")
-
-
-if __name__ == '__main__':
-    unittest.main()

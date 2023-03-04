@@ -29,6 +29,5 @@ class RectangleTest(unittest.TestCase):
                          "<class 'models.rectangle.Rectangle'>")
 
 
-
 if __name__ == '__main__':
     unittest.main()

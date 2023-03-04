@@ -17,9 +17,14 @@ def setUp(self):
     Base._Base__nb_objects = 0
 
 
+def test_docstring(self):
+    """checks for any docstring"""
+    self.assertTrue(len(Rectangle.__doc__) >= 1)
+
+
 def test_isinstance(self):
     r = Rectangle(1, 2)
-    self.assertEqual(isinstance(r, Base), True)
+    self.assertEqual(isinstance(r, Rectangle), True)
 
 
 if __name__ == '__main__':

@@ -20,3 +20,8 @@ def setUp(self):
 def test_any_docstring(self):
     """Checks for any docstring"""
     self.assertTrue(len(Base.__doc__) >= 1)
+
+
+def test_isinstance(self):
+    r = Rectangle(1, 2)
+    self.assertEqual(isinstance(r, Base), True)

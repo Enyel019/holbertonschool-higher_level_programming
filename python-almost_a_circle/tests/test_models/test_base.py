@@ -75,8 +75,9 @@ class BaseTest(unittest.TestCase):
         """ raises error passed no args to function"""
         with self.assertRaises(TypeError) as e:
             b = Base.to_json_string()
-            self.assertEqual("to_json_string() missing 1 required positional " +
-                         "argument: 'list_dictionaries'", str(e.exception))
+            self.assertEqual("to_json_string() missing 1 required positional "
+                             + "argument: 'list_dictionaries'",
+                             str(e.exception))
 
     def test_list_of_dicts_json(self):
         b = Base.to_json_string([{"talla": 5}, {"ancho": 12}])
@@ -85,8 +86,9 @@ class BaseTest(unittest.TestCase):
     def test_no_args_save_to_file(self):
         with self.assertRaises(TypeError) as e:
             b = Base.save_to_file()
-            self.assertEqual("save_to_file() missing 1 required positional " +
-                         "argument: 'list_objs'", str(e.exception))
+            self.assertEqual("save_to_file() missing 1 required positional "
+                             + "argument: 'list_objs'",
+                             str(e.exception))
 
     def test_save_to_file_None(self):
         Base.save_to_file(None)

@@ -76,7 +76,7 @@ class BaseTest(unittest.TestCase):
         with self.assertRaises(TypeError) as e:
             b = Base.to_json_string()
             self.assertEqual("to_json_string() missing 1 required positional " +
-                         "argument: 'list_dictionaries'", str(e.exception))
+                       "argument: 'list_dictionaries'", str(e.exception))
 
     def test_list_of_dicts_json(self):
         b = Base.to_json_string([{"talla": 5}, {"ancho": 12}])

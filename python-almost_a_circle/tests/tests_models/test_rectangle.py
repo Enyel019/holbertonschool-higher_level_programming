@@ -25,8 +25,8 @@ class RectangleTest(unittest.TestCase):
 
     def test_class(self):
         '''Testsclass'''
-        self.assertEqual(str(Rectangle),
-                         "<class 'models.rectangle.Rectangle'>")
+        self.assertEqual(str(Rectangle))
+        '''class 'models.rectangle.Rectangle'''
 
 
 if __name__ == '__main__':

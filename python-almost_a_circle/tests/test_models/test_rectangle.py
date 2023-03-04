@@ -24,4 +24,8 @@ def test_any_docstring(self):
 
 def test_isinstance(self):
     r = Rectangle(1, 2)
-    self.assertEqual(isinstance(r, Rectangle), True)
+    self.assertEqual(isinstance(r, Base), True)
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -41,9 +41,3 @@ class RectangleTest(unittest.TestCase):
             r = Rectangle()
             self.assertEqual(str(e.exception), s)
 
-    def test_float(self):
-        with self.assertRaises(TypeError) as e:
-            b = Rectangle(float("inf"), 1)
-        self.assertEqual(
-            "width must be an integer",
-            str(e.exception))

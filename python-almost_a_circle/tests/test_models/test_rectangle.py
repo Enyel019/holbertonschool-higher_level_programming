@@ -18,16 +18,6 @@ class RectangleTest(unittest.TestCase):
         """checks for any docstring"""
         self.assertTrue(len(Rectangle.__doc__) >= 1)
 
-    def tearDown(self):
-        if os.path.exists("Base.json"):
-            os.remove("Base.json")
-        if os.path.exists("Rectangle.json"):
-            os.remove("Rectangle.json")
-        if os.path.exists("Square.json"):
-            os.remove("Square.json")
-
-
-
     def test_isinstance(self):
         r = Rectangle(1, 2)
         self.assertEqual(isinstance(r, Base), True)

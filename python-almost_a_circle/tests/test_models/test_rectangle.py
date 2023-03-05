@@ -30,3 +30,20 @@ class RectangleTest(unittest.TestCase):
         '''Testsclass'''
         self.assertEqual(str(Rectangle),
                          "<class 'models.rectangle.Rectangle'>")
+
+    def test_isinstance(self):
+        r = Rectangle(1, 2)
+        self.assertEqual(isinstance(r, Base), True)
+
+    def test_con_no_args(self):
+        '''Tests constructor signature.'''
+        with self.assertRaises(TypeError) as e:
+            r = Rectangle()
+            self.assertEqual(str(e.exception), s)
+
+    def test_float(self):
+        with self.assertRaises(TypeError) as e:
+            b = Rectangle(float("inf"), 1)
+        self.assertEqual(
+            "width must be an integer",
+            str(e.exception))

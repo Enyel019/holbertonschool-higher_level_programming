@@ -27,5 +27,4 @@ if __name__ == "__main__":
     try:
         if sys.argv[3]:
             connect_database(sys.argv[1], sys.argv[2], sys.argv[3])
-    except:
         pass

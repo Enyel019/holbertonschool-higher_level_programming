@@ -1,13 +1,12 @@
 #!/usr/bin/python3
+"""connect database."""
 
-""" connect database.
-"""
 import MySQLdb
 import sys
 
 
 def connect_database(usr, paswd, dt_name):
-    """ connects withdatabase to gather information
+    """connects withdatabase to gather information.
     """
 
     db = MySQLdb.connect(host='localhost', user=usr, passwd=paswd,

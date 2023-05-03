@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """connect database."""
 import MySQLdb
 import sys
@@ -22,10 +23,11 @@ if __name__ == "__main__":
             Session = sessionmaker(bind=engine)
             session = Session()
 
-            for state, city in session.query(State, City).filter(
-                    State.id == City.state_id).\
-                    order_by(City.id).all():
-                print("{}: ({}) {}".format(state.name, city.id, city.name))
+            que = session.query(State, City).filter(State.id == City.state_id)\
+                                            .order_by(City.id).all()
+
+            for a, b in que:
+                print("{}: ({}) {}".format(a.name, b.id, b.name))
             session.close()
     except MySQLdb.Error:
         pass

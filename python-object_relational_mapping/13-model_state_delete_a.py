@@ -24,6 +24,7 @@ if __name__ == "__main__":
             for states in session.query(State).order_by(State.id).all():
                 if "a" in states.name:
                     session.delete(states)
+
             session.commit()
             session.close()
     except MySQLdb.Error:

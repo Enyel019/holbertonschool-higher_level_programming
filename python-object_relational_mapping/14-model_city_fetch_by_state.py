@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+"""connect database."""
 import MySQLdb
 import sys
 from sqlalchemy import create_engine
@@ -21,8 +23,8 @@ if __name__ == "__main__":
             Session = sessionmaker(bind=engine)
             session = Session()
 
-            que = session.query(State, City).filter(State.id == City.state_id)\
-                                            .order_by(City.id).all()
+            que = session.query(State, City).filter(
+                State.id == City.state_id).order_by(City.id).all()
 
             for a, b in que:
                 print("{}: ({}) {}".format(a.name, b.id, b.name))

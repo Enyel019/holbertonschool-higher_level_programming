@@ -23,11 +23,10 @@ if __name__ == "__main__":
             Session = sessionmaker(bind=engine)
             session = Session()
 
-            que = session.query(State, City).filter(
-                State.id == City.state_id).order_by(City.id).all()
-
-            for a, b in que:
-                print("{}: ({}) {}".format(a.name, b.id, b.name))
+            for state, city in session.query(State, City).\
+                    filter(State.id == City.state_id).\
+                    order_by(City.id).all():
+                print("{}: ({}) {}".format(state.name, city.id, city.name))
             session.close()
     except MySQLdb.Error:
         pass

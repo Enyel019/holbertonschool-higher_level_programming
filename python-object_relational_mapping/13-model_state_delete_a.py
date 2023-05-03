@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """connect database."""
 import MySQLdb
 import sys
@@ -21,8 +22,8 @@ if __name__ == "__main__":
             Session = sessionmaker(bind=engine)
             session = Session()
 
-            for states in session.query(State).filter(State.name.like('%a%'))
-            session.delete(states)
+            for states in session.query(State).filter(State.name.like('%a%')):
+                session.delete(states)
 
             session.commit()
             session.close()

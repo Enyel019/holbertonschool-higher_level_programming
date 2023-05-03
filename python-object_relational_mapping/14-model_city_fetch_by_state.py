@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-"""connect database."""
 import MySQLdb
 import sys
 from sqlalchemy import create_engine

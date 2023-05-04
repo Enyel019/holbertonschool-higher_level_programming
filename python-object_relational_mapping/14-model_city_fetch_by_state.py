@@ -7,11 +7,8 @@ from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 from model_city import City
 
-"""
-create
-class to relate with
-database
-"""
+"""create class to relate with database."""
+
 if __name__ == "__main__":
     try:
         if sys.argv[3]:

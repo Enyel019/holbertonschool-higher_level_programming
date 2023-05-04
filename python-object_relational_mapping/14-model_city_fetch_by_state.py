@@ -19,6 +19,7 @@ if __name__ == "__main__":
                 'mysql+mysqldb://{}:{}@localhost:3306/{}'
                 .format(sys.argv[1], sys.argv[2], sys.argv[3]))
 
+            # Create a session and query the database
             Base.metadata.create_all(engine)
             Session = sessionmaker(bind=engine)
             session = Session()

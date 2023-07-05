@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 const lines = ["C is fun", "Python is cool", "JavaScript is amazing"];
-lines.forEach(line => {
+ lines.forEach((line) => {
   console.log(line);
 });

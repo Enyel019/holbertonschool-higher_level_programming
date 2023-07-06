@@ -1,9 +1,11 @@
 #!/usr/bin/node
-const argsCount = process.argv.length - 2;
-if (argsCount === 0) {
+const i = process.argv.slice(2);
+if (process.argv.slice(2).length === 0) {
   console.log('0');
-} else if (argsCount === 1) {
+} else if (process.argv.slice(2).length === 1) {
   console.log('0');
-} else {
-  console.log(argsCount - 2);
+}
+if (process.argv.slice(2).length > 1) {
+  const s = i.sort().length;
+  console.log(i[s - 2]);
 }

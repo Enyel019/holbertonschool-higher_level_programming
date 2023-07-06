@@ -1,11 +1,12 @@
 #!/usr/bin/node
-const i = process.argv.slice(2);
-if (process.argv.slice(2).length === 0) {
+ const args = process.argv.slice(2);
+ if (args.length === 0) {
   console.log('0');
-} else if (process.argv.slice(2).length === 1) {
+} else if (args.length === 1) {
   console.log('0');
 }
-if (process.argv.slice(2).length > 1) {
-  const s = i.sort().length;
-  console.log(i[s - 2]);
+ if (args.length > 1) {
+  const sortedArgs = args.sort();
+  const secondLastArg = sortedArgs[sortedArgs.length - 2];
+  console.log(secondLastArg);
 }

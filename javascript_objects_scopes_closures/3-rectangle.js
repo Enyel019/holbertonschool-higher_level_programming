@@ -6,7 +6,6 @@ class Rectangle {
       this.height = h;
     }
   }
-
   print() {
     const row = "X".repeat(this.width);
     for (let i = 0; i < this.height; i++) {
@@ -14,5 +13,4 @@ class Rectangle {
     }
   }
 }
-
 module.exports = Rectangle;

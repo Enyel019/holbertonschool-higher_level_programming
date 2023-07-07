@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
@@ -9,7 +8,7 @@ class Rectangle {
   }
 
   print() {
-    const row = 'X'.repeat(this.width);
+    const row = "X".repeat(this.width);
     for (let i = 0; i < this.height; i++) {
       console.log(row);
     }
